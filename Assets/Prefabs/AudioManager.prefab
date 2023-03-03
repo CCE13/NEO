@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2137956066681710440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137956066681710438}
+  - component: {fileID: 2137956066681710441}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2137956066681710438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137956066681710440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2060909, y: -2.424826, z: -0.025087746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2137956066681710441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137956066681710440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5448d90ca8ac9b341b02441a336c8fe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24300002, guid: 39a937c98da86484d9dc62332ca3765b, type: 2}
+  sounds:
+  - name: BackgroundAmbience
+    clip: {fileID: 8300000, guid: 12655a9fe63008b4abe61270e9e752d6, type: 3}
+    volume: 0.293
+    pitch: 1
+    loop: 1
+    playOnAwake: 1
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: EnemyKilling
+    clip: {fileID: 8300000, guid: 1b63f1738964cee4b909e89020a55aa9, type: 3}
+    volume: 0.53
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: Dashing
+    clip: {fileID: 8300000, guid: ea9856468b1eda34f968493ff1d12a4c, type: 3}
+    volume: 0.369
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 6d52a9e93e390324498eb9bc9456c478, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: EnemyShooting
+    clip: {fileID: 8300000, guid: 5a7e1f991d26c444dbc8ff66949db588, type: 3}
+    volume: 0.736
+    pitch: 1.4
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: GlassShatter
+    clip: {fileID: 8300000, guid: 4944c05364871ca48802c67037df40d1, type: 3}
+    volume: 0.393
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: BackgroundTraffic
+    clip: {fileID: 8300000, guid: a12f545fe7a5cbc41953fcb5490b1a9d, type: 3}
+    volume: 0.385
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: Cyber
+    clip: {fileID: 8300000, guid: 9c00d8af239be6c48b1879815d68fa68, type: 3}
+    volume: 0.385
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: HornNoise
+    clip: {fileID: 8300000, guid: cfa8692bc04056a4799caac11f2c591c, type: 3}
+    volume: 0.261
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: C2
+    clip: {fileID: 8300000, guid: 886a68e291468df4994b6ddea713f566, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}
+  - name: C3
+    clip: {fileID: 8300000, guid: 1560189255af05b40bfb1c08027766f7, type: 3}
+    volume: 0.529
+    pitch: 1
+    loop: 1
+    playOnAwake: 0
+    SpatialBlend: 0
+    maxDistance: 20
+    minDistance: 0
+    source: {fileID: 0}

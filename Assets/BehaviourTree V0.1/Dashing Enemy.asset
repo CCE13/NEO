@@ -1,0 +1,915 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8304252461818257222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a118cd50fe76041a68e4a00e7bf4b6, type: 3}
+  m_Name: ShootingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1b69704afeabfd140aecd32c5db5fc8a
+  position: {x: 1202.5714, y: 1061.7142}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  bulletTrail: {fileID: 4660086706008052005, guid: ded5b8db139cbc946a5cec4c4b38057b, type: 3}
+  delay: 0.4
+  missedShots: 1
+  limitedBullets: 1
+  shootFor: 8
+  shootForTemp: 0
+  gunDelayWait: 0
+  missedShotsTemp: 0
+  changingValue: 0
+--- !u!114 &-8142264492445150392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02f46ba5f6f6a54587167185f4febab, type: 3}
+  m_Name: MoveToWaypointNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5da55df1c4459c94f8e1ead6c11c5276
+  position: {x: -1314.8572, y: 739.42847}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  target: {fileID: 0}
+  speed: 75
+  wayPointIndex: 7
+  useWayPointIndex: 1
+--- !u!114 &-7671445677361965464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5ab147898eee02345980144feaa2e310
+  position: {x: -661.674, y: 925.00006}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: Boss Dashing
+  playAnimation: 1
+--- !u!114 &-7406600330862462005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328b24cafa73ada498e6f27494a2a9da, type: 3}
+  m_Name: MeleeAttackNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 47c8151219c08f445998600c3e131ca0
+  position: {x: -595.9999, y: 772.00006}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  AbleToKillLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+  punchTime: 0
+  raycastLength: 2
+--- !u!114 &-6657599434452949361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 53ada5291beef8b43897d7975e68e980
+  position: {x: 1069, y: 909.5715}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 5445329247844450080}
+  - {fileID: -8304252461818257222}
+--- !u!114 &-6187675515014151307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: bc5d149dd2d5df143ba8515a663f4a00
+  position: {x: -1177.893, y: 618}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -8142264492445150392}
+  - {fileID: 6326895871291011078}
+--- !u!114 &-5766829001663972574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcaa6d93aaae3340825f1552d887191, type: 3}
+  m_Name: CheckPlayerDashingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 27a88cc918c87e244949c76f56130cc2
+  position: {x: -746.0002, y: 617.99994}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -2268421950331694324}
+  - {fileID: -7406600330862462005}
+--- !u!114 &-4648570075581375676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c58dad003066e46bb50f1195b17b94, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4d60ba33194fd824d94cbff6596b843f
+  position: {x: -21.142767, y: 138.52048}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: 6256184861138569840}
+--- !u!114 &-2292992858584867045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063c839748e71004596c1d220dbec075, type: 3}
+  m_Name: IsBossHitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 66b178f8fae46c6418a2790ebc7ca7f9
+  position: {x: -1453.7197, y: 462.57825}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 2356895289922355246}
+  - {fileID: -6187675515014151307}
+  setToFailue: 0
+--- !u!114 &-2268421950331694324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de5a61b51ed2e34f8919f22e53e4b24, type: 3}
+  m_Name: BlockingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: dab89796fed792749af217fe6ab55f90
+  position: {x: -937.7487, y: 772}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  knockBackStrength: 50
+  blocking: Boss Blocking
+--- !u!114 &-1668069174636972222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02f46ba5f6f6a54587167185f4febab, type: 3}
+  m_Name: MoveToWaypointNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 01958f670f04b4444b1d1ecd0dc5cfc8
+  position: {x: 641.9999, y: 1127}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  target: {fileID: 0}
+  speed: 75
+  wayPointIndex: 0
+  useWayPointIndex: 0
+--- !u!114 &-1275772252688108638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0306b21b6d6be84f80be3647c73c8e5, type: 3}
+  m_Name: Fail
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 0fc3228307a6ce846ae28f6bd3c1f0fd
+  position: {x: -489.7806, y: 672}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+--- !u!114 &-675666574160537414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c58dad003066e46bb50f1195b17b94, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 52fa605adff710646b5bafe68aa182cc
+  position: {x: 223.86566, y: 446.8571}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: 4112889207797407559}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5503d627fedb5774eaaa29f5405fbb59, type: 3}
+  m_Name: Dashing Enemy
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 1046114722116183748}
+  treeState: 0
+  nodes:
+  - {fileID: 1046114722116183748}
+  - {fileID: 8383605083995914192}
+  - {fileID: -7406600330862462005}
+  - {fileID: -5766829001663972574}
+  - {fileID: -2268421950331694324}
+  - {fileID: 8290462856257873972}
+  - {fileID: 8680688006618531785}
+  - {fileID: 6256184861138569840}
+  - {fileID: -4648570075581375676}
+  - {fileID: -1275772252688108638}
+  - {fileID: -675666574160537414}
+  - {fileID: -8304252461818257222}
+  - {fileID: 91802043238419725}
+  - {fileID: -1668069174636972222}
+  - {fileID: 4112889207797407559}
+  - {fileID: -2292992858584867045}
+  - {fileID: 7519960495184261431}
+  - {fileID: 5648589784200393353}
+  - {fileID: -7671445677361965464}
+  - {fileID: 115751129109799293}
+  - {fileID: 9115788006082697994}
+  - {fileID: 82000371777375613}
+  - {fileID: 7609795481623075668}
+  - {fileID: 6074587193599783456}
+  - {fileID: 6875685839789490239}
+  - {fileID: 4501281683996326915}
+  - {fileID: 3279418250408688056}
+  - {fileID: -6187675515014151307}
+  - {fileID: -8142264492445150392}
+  - {fileID: 6326895871291011078}
+  - {fileID: -6657599434452949361}
+  - {fileID: 5445329247844450080}
+  - {fileID: 5996282999405816854}
+  - {fileID: 2356895289922355246}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+--- !u!114 &82000371777375613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6f8a70b4fd198c84684b407203f308dd
+  position: {x: 421.26123, y: 1127.1989}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: Boss Dashing
+  playAnimation: 1
+--- !u!114 &91802043238419725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a49be010ec620144792898b31dec7e78
+  position: {x: 694.7215, y: 766.2859}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 9115788006082697994}
+  - {fileID: -6657599434452949361}
+--- !u!114 &115751129109799293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e8567178f322be941a2b9fd00c842c60
+  position: {x: 87.200035, y: 925.00024}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: Boss Dashing
+  playAnimation: 1
+--- !u!114 &1046114722116183748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06df3dd05a1b0242af3405e2cc11ca3, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 082c15d79a4bb9f4cba3d6bb15682886
+  position: {x: -21.142767, y: 13.949005}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: -4648570075581375676}
+--- !u!114 &2356895289922355246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c97bd85e7bb786046bc16cfb60f7ed50
+  position: {x: -1644.8572, y: 573.71436}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 3279418250408688056}
+  - {fileID: 5996282999405816854}
+--- !u!114 &3279418250408688056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 614f58a8dad43d9478c7483ab7b3d5df
+  position: {x: -1845.1428, y: 706.8572}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: Boss Damaged
+  playAnimation: 1
+--- !u!114 &4112889207797407559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd0657f08ebd404aa8028d2386e31c0, type: 3}
+  m_Name: StageSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c222f7d39ad64824d91b001934855f83
+  position: {x: 193, y: 616}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 7519960495184261431}
+  - {fileID: 5648589784200393353}
+  - {fileID: 91802043238419725}
+  IncludedChildPerStage:
+  - 0,1
+  - 0,1,2
+--- !u!114 &4501281683996326915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02f46ba5f6f6a54587167185f4febab, type: 3}
+  m_Name: MoveToWaypointNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b91c29ec4f69d404e9dc6aa0e94c4bba
+  position: {x: -262.0001, y: 924.9999}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  target: {fileID: 0}
+  speed: 75
+  wayPointIndex: 0
+  useWayPointIndex: 0
+--- !u!114 &5445329247844450080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b08843c66d1c4e4459fb4ba78c20eaa3
+  position: {x: 1033.2858, y: 1061.7142}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: DashingEnemyShooting
+  playAnimation: 0
+--- !u!114 &5648589784200393353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a8f8e920b804cb445962039ec3328c53
+  position: {x: 237, y: 766}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 115751129109799293}
+  - {fileID: 8680688006618531785}
+  - {fileID: 6074587193599783456}
+--- !u!114 &5996282999405816854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 88e3111e99dd9244dac6092aedc13084
+  position: {x: -1594, y: 740}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  duration: 1
+--- !u!114 &6074587193599783456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d58c8398b47b84d4081593ff34bfb272
+  position: {x: 410, y: 925}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  duration: 0.4
+--- !u!114 &6256184861138569840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea06371fcde6614ab23fa8948025a49, type: 3}
+  m_Name: InterruptSelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d00ad4d9726ca7e49aeb8f5d602306f1
+  position: {x: -21.142822, y: 296.7143}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -2292992858584867045}
+  - {fileID: 8290462856257873972}
+  - {fileID: -675666574160537414}
+--- !u!114 &6326895871291011078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e28acc94e5ab4d940b8154939c7a8370, type: 3}
+  m_Name: AnimationTriggerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c6e1467dc949cb7468aa25c3e8176053
+  position: {x: -1131.7299, y: 734}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  triggerName: Boss DeathBlow
+  playAnimation: 1
+--- !u!114 &6875685839789490239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7984016958339a44bb596a81a8e0a0e5
+  position: {x: -91, y: 925}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  duration: 0.4
+--- !u!114 &7519960495184261431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 0b5b0fb92c3d9604e84306e368a9c2d0
+  position: {x: -241, y: 766}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -7671445677361965464}
+  - {fileID: 8383605083995914192}
+  - {fileID: 4501281683996326915}
+  - {fileID: 6875685839789490239}
+--- !u!114 &7609795481623075668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6fa7280c927b1f54295247560c36dce8
+  position: {x: 867, y: 1127}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  duration: 1
+--- !u!114 &8290462856257873972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aef977b7ec7dbc489e3ab2f093d37ef, type: 3}
+  m_Name: ColliderCheckNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2493f3f50c427744b95c6d08c23aa1de
+  position: {x: -662.00006, y: 477.9841}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -5766829001663972574}
+  - {fileID: -1275772252688108638}
+  colliderToUse: 2
+  whatToCheckWith: 0
+  tagToCheckFor: Player
+  layerToCheckFor:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  boxSize: {x: 1.27, y: 1.65, z: 0}
+  raycastLength: 4
+  circleRadius: 3
+--- !u!114 &8383605083995914192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff9ee222aaa5bb43a47554a030b9cb9, type: 3}
+  m_Name: DashToPlayerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3e5a0d7063916424896a5472295926d6
+  position: {x: -449.9999, y: 925}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  targetPos: {x: 0, y: 0, z: 0}
+  speed: 75
+--- !u!114 &8680688006618531785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02f46ba5f6f6a54587167185f4febab, type: 3}
+  m_Name: MoveToWaypointNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4293c84906d15b343b43eb347466d071
+  position: {x: 237, y: 924.9999}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  target: {fileID: 0}
+  speed: 75
+  wayPointIndex: 0
+  useWayPointIndex: 0
+--- !u!114 &9115788006082697994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 34564a917d9dba141b22ed6cfc6f51e8
+  position: {x: 642, y: 925}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 82000371777375613}
+  - {fileID: -1668069174636972222}
+  - {fileID: 7609795481623075668}

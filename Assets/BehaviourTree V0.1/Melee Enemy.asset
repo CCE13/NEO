@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7992278120022160433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328b24cafa73ada498e6f27494a2a9da, type: 3}
+  m_Name: MeleeAttackNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4e6a6d5d733a5154da909f69ca3297a7
+  position: {x: -560, y: 657}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  AbleToKillLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+  punchTime: 0.07
+  raycastLength: 1.3
+--- !u!114 &-3733807245841535120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c58dad003066e46bb50f1195b17b94, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 30e209f7f4a1545439f365779bbf35b3
+  position: {x: -245.00002, y: 77.74498}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: 2477894265249741118}
+--- !u!114 &-2932085493051738865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eedf8406a93e5624085f589e93f7b6d8, type: 3}
+  m_Name: PatrolNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 990cd56c60acdc14c8d6d3291cda6c3a
+  position: {x: -395.00015, y: 528.00006}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  waypointIndex: 2
+  speed: 2
+  detectionLeeway: 0.3
+  chasePlayer: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  WalkAnimationName: MeleeEnemyWalk
+--- !u!114 &-2072929212501995876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9252f0380663b8b4e8b0485f1e0c0054
+  position: {x: -74.00795, y: 374.26688}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 1007273644869355520}
+  - {fileID: -1808287342327634436}
+--- !u!114 &-1808287342327634436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eedf8406a93e5624085f589e93f7b6d8, type: 3}
+  m_Name: PatrolNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 72a8e865403603b4a9a50c1ded9bbcf1
+  position: {x: 75.99996, y: 528}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  waypointIndex: 2
+  speed: 1.3
+  detectionLeeway: 0.3
+  chasePlayer: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  WalkAnimationName: MeleeEnemyWalk
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5503d627fedb5774eaaa29f5405fbb59, type: 3}
+  m_Name: Melee Enemy
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 1046114722116183748}
+  treeState: 0
+  nodes:
+  - {fileID: 1046114722116183748}
+  - {fileID: -3733807245841535120}
+  - {fileID: 2477894265249741118}
+  - {fileID: 4238994503762553279}
+  - {fileID: -2072929212501995876}
+  - {fileID: -1808287342327634436}
+  - {fileID: 1007273644869355520}
+  - {fileID: 1961354497087493068}
+  - {fileID: -2932085493051738865}
+  - {fileID: 960433359646060865}
+  - {fileID: -7992278120022160433}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+--- !u!114 &960433359646060865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de5a61b51ed2e34f8919f22e53e4b24, type: 3}
+  m_Name: BlockingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a677158b97d95da4e9e64d0cd9d8b040
+  position: {x: -797.00006, y: 657}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  knockBackStrength: 70
+  blocking: Blocking
+--- !u!114 &1007273644869355520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eedf8406a93e5624085f589e93f7b6d8, type: 3}
+  m_Name: PatrolNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 620804a32a7ab6d42a5f66c8a8363be8
+  position: {x: -185.0001, y: 544}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  waypointIndex: 1
+  speed: 1.3
+  detectionLeeway: 0.3
+  chasePlayer: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  WalkAnimationName: MeleeEnemyWalk
+--- !u!114 &1046114722116183748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06df3dd05a1b0242af3405e2cc11ca3, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 082c15d79a4bb9f4cba3d6bb15682886
+  position: {x: -244.99998, y: -94.65081}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: -3733807245841535120}
+--- !u!114 &1961354497087493068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcaa6d93aaae3340825f1552d887191, type: 3}
+  m_Name: CheckPlayerDashingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3f0d91e593b4c2644ae83d7de55c88d2
+  position: {x: -647.41766, y: 528}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 960433359646060865}
+  - {fileID: -7992278120022160433}
+--- !u!114 &2477894265249741118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cc6e2bedcd30349b5d15cefd415087, type: 3}
+  m_Name: IsPlayerVisableNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f69d00e7f79788d479b10f297a66f380
+  position: {x: -280.08295, y: 232.97345}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 4238994503762553279}
+  - {fileID: -2072929212501995876}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  rayCastLength: 1000
+--- !u!114 &4238994503762553279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aef977b7ec7dbc489e3ab2f093d37ef, type: 3}
+  m_Name: ColliderCheckNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b501252742a8200448263f779880830c
+  position: {x: -497, y: 360}
+  blackboard:
+    enemyState: 0
+    SpottedPlayer: 0
+    bossStages: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: 1961354497087493068}
+  - {fileID: -2932085493051738865}
+  colliderToUse: 2
+  whatToCheckWith: 0
+  tagToCheckFor: Player
+  layerToCheckFor:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  boxSize: {x: 1.27, y: 1.65, z: 0}
+  raycastLength: 4
+  circleRadius: 3

@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7832179873955286657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4010eac51989b9b4f9ef7a527e6fc838
+  position: {x: 192.05003, y: 113.00005}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  duration: 2
+--- !u!114 &-6178338504790551474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0c5d615a40b5a4191c7f29cf622688, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a33abd049e740af4b98e754c0483fd5a
+  position: {x: -195.0001, y: 98.00003}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  message: YOOOO
+--- !u!114 &-5915725413032355257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 729dba8e4258ae042909c4ca7dfdaeb1
+  position: {x: -171, y: -189}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  children:
+  - {fileID: -5545711673239827666}
+  - {fileID: -704017558617032681}
+--- !u!114 &-5636868932451353191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0c5d615a40b5a4191c7f29cf622688, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 40c97f8c2f51f7c4085c8a206a59172a
+  position: {x: 12.125216, y: 113.000046}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  message: ye
+--- !u!114 &-5545711673239827666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 66fa06d044201cb44a6def347725f159
+  position: {x: -420.00003, y: -62.000042}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: hello
+  children:
+  - {fileID: 9141721623117353028}
+  - {fileID: 2566345481674767567}
+  - {fileID: -798409872885950593}
+  - {fileID: -6178338504790551474}
+--- !u!114 &-2249629418238360402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06df3dd05a1b0242af3405e2cc11ca3, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 18eead04107a6394eab390c0e7ef43d4
+  position: {x: -171, y: -455}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  child: {fileID: 2771264055079205876}
+--- !u!114 &-798409872885950593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0c5d615a40b5a4191c7f29cf622688, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: c82da8040d47175458c3c4848ed46e6a
+  position: {x: -345.00003, y: 98}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  message: HELLLOOOOOO
+--- !u!114 &-704017558617032681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5559724875c7a4fb38cecfba8aa049, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 22dec74a155bd2446914a72c8d9a787f
+  position: {x: 102.58451, y: -62.000042}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  children:
+  - {fileID: -5636868932451353191}
+  - {fileID: -7832179873955286657}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5503d627fedb5774eaaa29f5405fbb59, type: 3}
+  m_Name: BehaviourTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -2249629418238360402}
+  treeState: 0
+  nodes:
+  - {fileID: -2249629418238360402}
+  - {fileID: 2771264055079205876}
+  - {fileID: -5545711673239827666}
+  - {fileID: -798409872885950593}
+  - {fileID: 2566345481674767567}
+  - {fileID: 9141721623117353028}
+  - {fileID: -6178338504790551474}
+  - {fileID: -5915725413032355257}
+  - {fileID: -704017558617032681}
+  - {fileID: -5636868932451353191}
+  - {fileID: -7832179873955286657}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+--- !u!114 &2566345481674767567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60581ed8116ea4e9a1108108b25925, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 85a9331c5bfcfc049b661063ed8cfcea
+  position: {x: -522.0002, y: 97.999985}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  duration: 3
+--- !u!114 &2771264055079205876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c58dad003066e46bb50f1195b17b94, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 30ba8c3e43f6291439158c946e2024de
+  position: {x: -171.00003, y: -294.16254}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 'Repeats the nodes '
+  child: {fileID: -5915725413032355257}
+--- !u!114 &9141721623117353028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0c5d615a40b5a4191c7f29cf622688, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5669fbaecdfb7b64491c39063661e39d
+  position: {x: -709.5827, y: 97.79127}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToObject: {fileID: 0}
+  description: 
+  message: 2

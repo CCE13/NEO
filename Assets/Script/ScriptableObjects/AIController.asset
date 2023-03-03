@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e34e76c68beda446bfb4ffbceff8ae9, type: 3}
+  m_Name: AIController
+  m_EditorClassIdentifier: 
+  direction: {x: 0.0009785802, y: -0.9999995}
+  crossDirection: {x: -0.99935365, y: -0.03594797}
+  amplitude: 67.28
+  frequency: 125.3
+  time: 0.11200001
+  speed: 124.47
+  directionCalculation: {x: 68.81321, y: -1976.9491}
+  _startPosition: {x: -0.89, y: -39.2}

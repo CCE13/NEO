@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7095872056556905860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de5a61b51ed2e34f8919f22e53e4b24, type: 3}
+  m_Name: BlockingNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e2a02bc8158caef4c9bc3a6e9e49c409
+  position: {x: -352.00003, y: 129.00002}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  knockBackStrength: 50
+  blocking: Blocking
+--- !u!114 &-2332473383708293992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0c5d615a40b5a4191c7f29cf622688, type: 3}
+  m_Name: DebugLogNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6da8fd3e7ce847f4b86663d71281436d
+  position: {x: -21.000061, y: 129}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  message: no touchy
+--- !u!114 &-2249629418238360402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06df3dd05a1b0242af3405e2cc11ca3, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 18eead04107a6394eab390c0e7ef43d4
+  position: {x: -171, y: -455}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  child: {fileID: 2771264055079205876}
+--- !u!114 &-1647863425865805072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aef977b7ec7dbc489e3ab2f093d37ef, type: 3}
+  m_Name: ColliderCheckNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1f1d9f593a8a94243bab55e2be809243
+  position: {x: -171.00005, y: -80.99999}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 
+  children:
+  - {fileID: -7095872056556905860}
+  - {fileID: -2332473383708293992}
+  colliderToUse: 2
+  whatToCheckWith: 0
+  tagToCheckFor: Player
+  layerToCheckFor:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  boxSize: {x: 1.91, y: 2.61, z: 0}
+  circleRadius: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5503d627fedb5774eaaa29f5405fbb59, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -2249629418238360402}
+  treeState: 0
+  nodes:
+  - {fileID: -2249629418238360402}
+  - {fileID: 2771264055079205876}
+  - {fileID: -1647863425865805072}
+  - {fileID: -2332473383708293992}
+  - {fileID: -7095872056556905860}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+--- !u!114 &2771264055079205876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c58dad003066e46bb50f1195b17b94, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 30ba8c3e43f6291439158c946e2024de
+  position: {x: -171.00003, y: -294.16254}
+  blackboard:
+    enemyState: 0
+    playerPostion: {x: 0, y: 0, z: 0}
+  description: 'Repeats the nodes '
+  child: {fileID: -1647863425865805072}
